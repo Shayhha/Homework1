@@ -106,7 +106,7 @@ def Xnor(x,y):
         return False
 
 
-print(Xnor(True,False)) #checks Xnor func
+#print(Xnor(True,False)) #checks Xnor func
 
 
 
@@ -116,27 +116,6 @@ print(Xnor(True,False)) #checks Xnor func
 
 
 
-def pattern(n):
-    '''prints a pattern of stars with a gap in the middle. n represents the number of rows.'''
-    # variable decleration
-    i = 1
-    word = '*'
-
-    while i <= n: # outside loop is for printing rows.
-        j = i*2 # j is the number of stars in row number i
-        k = (n*2)-j # k is the number of spaces in row number i
-        while j > 0: # first inner loop is for printing stars in each row.
-            if j == i: # if we have allready printed exactly half of the stars for this row, go ahead and print all the spaces.
-                while k > 0: # second inner loop is for printing all the spaces at ones in each row.
-                    print(' ',end='')
-                    k-=1
-            print(word,end='')
-            j-=1
-        print()
-        i+=1
-        
-
-#pattern(5) # testing that the pattern function works
 
 
 
